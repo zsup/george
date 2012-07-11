@@ -1,6 +1,4 @@
 class DevicesController < ApplicationController
-  attr_accessible :name, :type
-  belongs_to :user
   
   # GET /devices
   # GET /devices.json

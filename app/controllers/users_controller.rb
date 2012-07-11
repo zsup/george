@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  attr_accessible :email, :name
-  has_many :devices
   
   # GET /users
   # GET /users.json
