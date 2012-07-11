@@ -1,4 +1,7 @@
 George::Application.routes.draw do
+  get "static/landing"
+  get "static/home"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
