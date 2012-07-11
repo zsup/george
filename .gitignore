@@ -16,3 +16,4 @@
 
 # Ignore other stuffs.
 .DS_Store
+.env
