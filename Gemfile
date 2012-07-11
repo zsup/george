@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
 
+gem 'bootstrap-sass', '2.0.4.0'
+
 gem 'thin'
 
 gem 'pg', '0.12.2'
@@ -12,11 +14,6 @@ gem 'pg', '0.12.2'
 # use sqlite in development
 group :development, :test do
   gem 'rspec-rails', '2.10.0'
-end
-
-# use postgresql in production (for Heroku)
-group :production do
-
 end
 
 # Gems used only for assets and not required
