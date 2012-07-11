@@ -4,18 +4,19 @@ gem 'rails', '3.2.6'
 
 gem 'thin'
 
+gem 'pg', '0.12.2'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # use sqlite in development
-group :development do
-  gem 'sqlite3', '1.3.5'
+group :development, :test do
   gem 'rspec-rails', '2.10.0'
 end
 
 # use postgresql in production (for Heroku)
 group :production do
-  gem 'pg', '0.12.2'
+
 end
 
 # Gems used only for assets and not required
@@ -34,6 +35,7 @@ gem 'jquery-rails', '2.0.0'
 
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'spork', '0.9.0'
 end
 
 
