@@ -45,7 +45,7 @@ $sansFontFamily:        "proxima-nova", "Proxima Nova", "Helvetica Neue", Helvet
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
-$baseFontSize:          13px !default;
+$baseFontSize:          14px !default;
 $baseFontFamily:        $sansFontFamily !default;
 $baseLineHeight:        18px !default;
 $altFontFamily:         $serifFontFamily !default;
@@ -140,8 +140,8 @@ $hrBorder:                $grayLighter !default;
 
 // Navbar
 // -------------------------
-$navbarHeight:                    40px !default;
-$navbarBackground:                $grayDarker !default;
+$navbarHeight:                    60px !default;
+$navbarBackground:                $grayDark !default;
 $navbarBackgroundHighlight:       $grayDark !default;
 
 $navbarText:                      $grayLight !default;
@@ -160,9 +160,9 @@ $navbarBrandColor:                $navbarLinkColor !default;
 
 // Hero unit
 // -------------------------
-$heroUnitBackground:              $grayLighter !default;
-$heroUnitHeadingColor:            inherit !default;
-$heroUnitLeadColor:               inherit !default;
+$heroUnitBackground:              $grayDark !default;
+$heroUnitHeadingColor:            $white !default;
+$heroUnitLeadColor:               $grayLighter !default;
 
 
 // Form states and alerts

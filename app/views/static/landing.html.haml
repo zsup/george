@@ -4,19 +4,23 @@
 			.brand SWITCH
 			%ul.nav
 				%li.active
-					%a.switch{href: "#"} How it works
+					%a{href: "#"} How it works
 				%li
-					%a.switch{href: "#"} What it can do
+					%a{href: "#"} What it can do
+			%ul.nav.pull-right
 				%li
-					%a.switch{href: "#"} Blog
-.container
-	.hero-unit
-		.row-fluid
+					%a{href: "#"} Blog
+				
+.hero-unit
+	.container
+		.row
 			.span6.pull-right
 				%img{src: "http://placehold.it/500x300"}
 			.span6
 				%h1 Bringing the internet to your home.
-				%h4 SWITCH is the most awesome system ever for controlling the lights in your home. Launching Fall 2012.
+				%p SWITCH is the most awesome system ever for controlling the lights in your home. Launching Fall 2012.
+.container
+	.arrow
 	.signup
 		.row
 			%input{type: 'text', placeholder: "Email address"}

@@ -8,24 +8,65 @@
 	background: #333;
 }
 
-.navbar {
+.navbar-fixed-top {
 	color: #000;
 	min-height: 60px;
-	
-	a.switch {
-		font-size: 16px;
-		font-weight: 700;
-		text-transform: uppercase;
-		text-shadow: 0 5px 5px #fff;
-	}
+	margin-bottom: 0;
 }
 
-.hero-unit .row-fluid .pull-right {
-	float: right;
+.navbar .nav > li > a {
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-shadow: 0 2px 0 #000;
+}
+
+.navbar .brand {
+	font-weight: 900;
+	font-size: 36px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: #111;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 20px rgba(255, 255, 255, .3);
+	@include transition(all .2s)
+}
+
+.navbar .brand:hover {
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 20px rgba(255, 255, 255, .5);
+	@include transition(all .2s)
+}
+
+// On to the hero unit
+.hero-unit {
+	@include border-radius(0);
+	padding:40px;
+	margin-bottom: 0;
 }
 
 .hero-unit h1 {
-	font-family: "proxima-nova";
-	text-transform: capitalize;
+	text-transform: uppercase;
+	font-weight: 900;
+	line-height: 50px;
+	text-shadow: 0 3px 0 #000;
+	margin-bottom: 10px;
 }
 
+.hero-unit p {
+	font-weight: 500;
+	text-shadow: 0 2px 0 #000;
+}
+
+.hero-unit .row .pull-right {
+	float: right;
+}
+
+// A CSS arrow
+.arrow {
+	display: block;
+	margin: 0 auto;
+	width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 40px solid $grayDark;
+}
