@@ -15,50 +15,69 @@
 	.container
 		.row
 			.span6.pull-right
-				%img{src: "http://placehold.it/500x300"}
+				%img{src: "http://placehold.it/500x350"}
 			.span6
 				%h1 Bringing the internet to your home.
 				%p SWITCH is the most awesome system ever for controlling the lights in your home. Launching Fall 2012.
+.signup
+	.container
+		.row
+			.span6
+				%p
+					%strong SWITCH is coming in Fall 2012.
+				%p Be the first to know when it's ready.
+			.span6.signup-form
+				%form.form-inline
+					.control-group
+						%input.span4{type: 'text', placeholder: "Email address"}
+						%button.btn.btn-primary{type: "button"} Request invite
+			
 .container
 	.arrow
-	.signup
-		.row
-			%input{type: 'text', placeholder: "Email address"}
-			%button.btn{type: "button"} Sign up
-			-# Somehow a CSS triangle goes here
-	%hr
 	.row
-		.span3
+		.span4
 			%img{src: "http://placehold.it/400x300"}
-		.span9
+		.span8
 			%h1 Painless set-up and oh so easy to use.
 			%p Bacon ipsum dolor sit amet anim tempor id chicken, veniam turkey ham culpa venison nisi leberkas adipisicing ut. Aute chicken boudin, duis spare ribs beef ribs pork belly quis minim. Commodo laborum turducken et dolore, eu fatback. Occaecat tri-tip aute, reprehenderit dolore in sirloin dolore filet mignon eiusmod tenderloin pork chop kielbasa.
-	%hr
+	%hr.soften
 	.row
-		.span3.pull-right
+		.span4.pull-right
 			%img{src: "http://placehold.it/400x300"}
-		.span9
+		.span8
 			%h1 Control from your phone... or anywhere.
 			%p Bacon ipsum dolor sit amet anim tempor id chicken, veniam turkey ham culpa venison nisi leberkas adipisicing ut. Aute chicken boudin, duis spare ribs beef ribs pork belly quis minim. Commodo laborum turducken et dolore, eu fatback. Occaecat tri-tip aute, reprehenderit dolore in sirloin dolore filet mignon eiusmod tenderloin pork chop kielbasa.
-	%hr
+	%hr.soften
 	.row
-		.span3
+		.span4
 			%img{src: "http://placehold.it/400x300"}
-		.span9
+		.span8
 			%h1 Apps make it even cooler.
 			%p Bacon ipsum dolor sit amet anim tempor id chicken, veniam turkey ham culpa venison nisi leberkas adipisicing ut. Aute chicken boudin, duis spare ribs beef ribs pork belly quis minim. Commodo laborum turducken et dolore, eu fatback. Occaecat tri-tip aute, reprehenderit dolore in sirloin dolore filet mignon eiusmod tenderloin pork chop kielbasa.
-	.signup2
-		.row
-			%h2 Want to know more? Sign up for more information!
-			%input.span2{type: 'text', placeholder: "Email address"}
-			%button.btn{type: "button"} Sign up
-	%footer
+%footer
+	.container
 		.row
 			.span3
-				%h5 Footer 1
+				%h5 News
+				%ul
+					%li
+						%a{href:"#"} Blog
+					%li
+						%a{href:"#"} Press Releases
 			.span3
-				%h5 Footer 2
+				%h5 Social
+				%ul
+					%li
+						%a{href:"#"} Facebook
+					%li
+						%a{href:"#"} Twitter
 			.span3
-				%h5 Footer 3
-			.span3	
-				%h5 Footer 4
+				%h5 Help
+				%ul
+					%li
+						%a{href:"#"} FAQ
+					%li
+						%a{href:"#"} Troubleshooting
+					%li
+						%a{href:"#"} Contact Us
+					
