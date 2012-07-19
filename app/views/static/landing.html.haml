@@ -1,27 +1,27 @@
 %header.navbar.navbar-fixed-top
 	.navbar-inner
 		.container
-			.brand SWITCH
-			%ul.nav
+			%a.brand{href: "#hero"} SWITCH
+			%ul.nav.visible-desktop
 				%li.active
 					%a{href: "#setup"} Easy Set up
 				%li
 					%a{href: "#control"} Complete Control
 				%li
-					%a{href: "#apps"} Apps... for lights?
-			%ul.nav.pull-right
-				%li
-					%a{href: "#"} Blog
+					%a{href: "#apps"} Apps for lights
+/				%ul.nav.pull-right
+/					%li
+/					%a{href: "#"} Blog
 				
-.hero-unit
+#hero.hero-unit
 	.container
 		.row
-			.span6.pull-right
-				.video
-					<iframe src="http://www.youtube.com/embed/IOncq-OM3_g" frameborder="0" allowfullscreen></iframe>
 			.span6
 				%h1 Connected lights, connected home.
 				%p SWITCH connects your lights to the internet for all sorts of fun. Remote control, scheduling, notifications, and dance parties, all from our website and iPhone/Android apps.
+			.span6
+				.video
+					<iframe src="http://fast.wistia.com/embed/iframe/7ea3c32f60?playerColor=121212&version=v1&videoHeight=360&videoWidth=640&volumeControl=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="640" height="360"></iframe>
 .signup
 	.container
 		.row

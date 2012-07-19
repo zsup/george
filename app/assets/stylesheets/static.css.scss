@@ -41,12 +41,12 @@ $bgImage: image-url("chandelier_blurred.jpg");
 	padding-right: 30px;
 	color: #111;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 20px rgba(255, 255, 255, .3);
-	@include transition(all .2s)
+	@include transition(text-shadow .2s)
 }
 
 .navbar .brand:hover {
 	text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 20px rgba(255, 255, 255, .5);
-	@include transition(all .2s)
+	@include transition(text-shadow .2s)
 }
 
 // On to the hero unit
@@ -68,7 +68,7 @@ $bgImage: image-url("chandelier_blurred.jpg");
 .hero-unit p {
 	color: $white;
 	font-weight: 500;
-	text-shadow: 0 1px 0 #000;
+	text-shadow: 0 1px 2px $black;
 }
 
 .hero-unit .row .pull-right {
@@ -78,7 +78,6 @@ $bgImage: image-url("chandelier_blurred.jpg");
 .video {
 	position: relative;
 	padding-bottom: 56.25%;
-	padding-top: 30px;
 	height: 0;
 	overflow: hidden;
 }
@@ -182,3 +181,43 @@ footer ul {
 	margin: 0;
 	font-size: 14px;
 }
+
+// Responsive stuff
+@media (max-width: 767px) {
+
+  // Padding to set content in a bit
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container {
+  	padding-left: 20px;
+  	padding-right: 20px;
+  }
+
+  .navbar .brand {
+  	width: 150px;
+  	text-align: center;
+  	float: none;
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding-left: 20px;
+  	padding-right: 20px;
+  }
+
+  .hero-unit {
+  	padding-left: 0;
+  	padding-right: 0;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+  	margin-left: 0;
+  	margin-right: 0;
+  }
+}
+
+/*
+ * MODIFICATIONS MADE ELSEWHERE:
+ * - Changed some variables
+ */
