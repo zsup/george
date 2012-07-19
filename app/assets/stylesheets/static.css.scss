@@ -52,7 +52,7 @@ $bgImage: image-url("chandelier_blurred.jpg");
 // On to the hero unit
 .hero-unit {
 	@include border-radius(0);
-	padding:40px;
+	padding:40px 0;
 	margin-bottom: 0;
 	background-image: $bgImage;
 }
@@ -96,7 +96,8 @@ $signUpLineHeight: 30px;
 
 .signup {
 	background-color: $switchBlue;
-	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	font-size: $signUpFontSize;
 	line-height: $signUpLineHeight;
 }
@@ -197,16 +198,11 @@ footer ul {
   }
 
   .navbar .brand {
-  	width: 150px;
+  	width: 180px;
   	text-align: center;
   	float: none;
   	margin-left: auto;
   	margin-right: auto;
-  	padding-left: 20px;
-  	padding-right: 20px;
-  }
-
-  .hero-unit {
   	padding-left: 0;
   	padding-right: 0;
   }
@@ -215,6 +211,32 @@ footer ul {
   	margin-left: 0;
   	margin-right: 0;
   }
+
+  .btn {
+  	width: 100%;
+  }
+}
+
+@media (max-width: 979px) {
+	.btn {
+		margin-top: 20px;
+	}
+
+	.hero-unit {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.hero-unit .span6 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 399px) {
+	.hero-unit h1 {
+		font-size: 40px;
+		line-height: 40px;
+	}
 }
 
 /*
