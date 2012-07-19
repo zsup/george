@@ -136,7 +136,7 @@ $signUpLineHeight: 30px;
 // A CSS arrow
 .arrow {
 	display: block;
-	margin: 0 auto 50px;
+	margin: 0 auto 30px;
 	width: 0;
 	height: 0;
 	border-left: 40px solid transparent;
@@ -147,7 +147,7 @@ $signUpLineHeight: 30px;
 // Nice HRs
 hr.soften {
 	height: 1px;
-	margin: 54px 0;
+	margin: 30px 0 40px 0;
     background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
     background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
@@ -156,10 +156,26 @@ hr.soften {
 }
 
 // Paragraph stuffs
+.image {
+	margin-bottom: 10px;
+}
+
+.text {
+	margin-bottom: 10px;
+}
+
+.text h1 {
+	margin-bottom: 10px;
+}
+
+.text p {
+	margin: 0;
+}
+
 p.footnote {
+	margin-top: 10px;
 	font-size: 80%;
 	color: $grayLight;
-
 }
 
 // Footer
@@ -214,6 +230,12 @@ footer ul {
 
   .btn {
   	width: 100%;
+  }
+
+  .image {
+  	max-width: 400px;
+  	margin-left: auto;
+  	margin-right: auto;
   }
 }
 
