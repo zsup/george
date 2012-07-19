@@ -16,3 +16,4 @@
 //= require jquery.fitvids
 //= require jquery.smooth-scroll.min
 //= require prettify
+//= require static
