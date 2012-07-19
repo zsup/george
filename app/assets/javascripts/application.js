@@ -12,4 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require jquery.knob
+//= require jquery.fitvids
+//= require jquery.smooth-scroll.min
+//= require prettify

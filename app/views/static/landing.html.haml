@@ -40,7 +40,7 @@
 	#setup.row
 		.span4
 			.image
-				%img{src: "http://placehold.it/400x300"}
+				= image_tag "so-easy.png"
 		.span8
 			.text
 				%h1 Painless set-up and oh so easy to use.
@@ -49,7 +49,7 @@
 	#control.row
 		.span4.pull-right
 			.image
-				%img{src: "http://placehold.it/400x300"}
+				= image_tag "devices.png"
 		.span8
 			.text
 				%h1 Control from your phone... or anywhere.
@@ -59,7 +59,7 @@
 	#apps.row
 		.span4
 			.image
-				%img{src: "http://placehold.it/400x300"}
+				%pre.prettyprint.lang-bsh~ "# Turn on the device 'Elroy'\n$ curl http://api.swtch.co/device/Elroy/turnOn\n\n# Pulse the device 'Elroy'\n$ curl http://api.swtch.co/device/Elroy/pulse\n\n# Get current status of device 'Elroy'\n$ curl http://api.swtch.co/device/Elroy"
 		.span8
 			.text
 				%h1 Apps make it even cooler.
