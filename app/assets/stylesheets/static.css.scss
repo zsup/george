@@ -5,13 +5,14 @@
 // My color palette
 $switchBlue: #5091cd;
 $switchDarkBlue: #002d62	;
-$bgImage: image-url("txture.png");
+$bgPattern: image-url("txture.png");
+$bgImage: image-url("chandelier_blurred.jpg");
 
 // Start with the nav bar
 .navbar-inner {
 	min-height: 60px;
 	background: #333;
-	background-image: $bgImage;
+	background-image: $bgPattern;
 }
 
 .navbar-fixed-top {
@@ -21,7 +22,7 @@ $bgImage: image-url("txture.png");
 }
 
 .navbar .nav .active > a, .navbar .nav .active >a:hover {
-	background-image: $bgImage;
+	background-image: $bgPattern;
 }
 
 .navbar .nav > li > a {
@@ -29,6 +30,7 @@ $bgImage: image-url("txture.png");
 	font-weight: 700;
 	text-transform: uppercase;
 	text-shadow: 0 2px 0 #000;
+	padding-right: 30px;
 }
 
 .navbar .brand {
@@ -36,6 +38,7 @@ $bgImage: image-url("txture.png");
 	font-size: 36px;
 	padding-top: 12px;
 	padding-bottom: 12px;
+	padding-right: 30px;
 	color: #111;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 20px rgba(255, 255, 255, .3);
 	@include transition(all .2s)
@@ -63,17 +66,35 @@ $bgImage: image-url("txture.png");
 }
 
 .hero-unit p {
+	color: $white;
 	font-weight: 500;
-	text-shadow: 0 2px 0 #000;
+	text-shadow: 0 1px 0 #000;
 }
 
 .hero-unit .row .pull-right {
 	float: right;
 }
 
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video iframe, .video object, .video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+// The sign up bar
 $signUpFontSize: 18px;
 $signUpLineHeight: 30px;
-// The sign up bar
+
 .signup {
 	background-color: $switchBlue;
 	padding: 20px;
@@ -132,6 +153,13 @@ hr.soften {
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
 	border: 0;
+}
+
+// Paragraph stuffs
+p.footnote {
+	font-size: 80%;
+	color: $grayLight;
+
 }
 
 // Footer

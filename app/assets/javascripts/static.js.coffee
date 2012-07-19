@@ -6,3 +6,4 @@ $ ->
 	$('.dial').knob
 		'min': 0
 		'max': 100
+	$('header').scrollspy()
