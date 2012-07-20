@@ -126,13 +126,16 @@ $signUpHeight: 40px;
 	margin-bottom: 0;
 }
 
-
 .signup input {
 	font-size: $signUpFontSize;
 	line-height: $signUpLineHeight;
 	padding-right: 10px;
 	padding-left: 10px;
 	height: $signUpLineHeight;
+}
+
+::-webkit-input-placeholder {
+	line-height: $signUpLineHeight;
 }
 
 button.btn {
@@ -233,7 +236,6 @@ footer ul {
 
   .signup input {
   	height: 40px;
-  	line-height: 40px;
   }
 
  	.btn {
