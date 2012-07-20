@@ -12,5 +12,3 @@ $(document).ready ->
 
 	wistiaEmbed.bind "play", ->
 		mixpanel.track("Video played")
-
-	wistiaEmbed.time(5).play()
