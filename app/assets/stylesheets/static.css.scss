@@ -82,7 +82,7 @@ $bgImage: image-url("livingroom_blurred.jpg");
 	overflow: hidden;
 }
 
-.video iframe, .video object, .video embed {
+.video iframe, #video object, #video embed {
 	position: absolute;
 	top: 0;
 	left: 0;

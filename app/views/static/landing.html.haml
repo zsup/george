@@ -21,8 +21,10 @@
 				%p SWITCH connects your lights to the internet and gives you limitless control over your home. Remote control, scheduling, notifications, and dance parties, all from our website and iPhone/Android apps.
 			.span6
 				.video
-					<iframe src="http://fast.wistia.com/embed/iframe/7ea3c32f60?playerColor=121212&version=v1&videoHeight=360&videoWidth=640&volumeControl=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="640" height="360"></iframe>
+					<iframe src="http://fast.wistia.com/embed/iframe/7ea3c32f60?playerColor=121212&version=v1&videoHeight=360&videoWidth=640&volumeControl=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" id="wistia_video" width="640" height="360"></iframe>
 - if flash[:notice]
+	:javascript
+		mixpanel.track("Email submitted")
 	.signup.green
 		.container
 			.row
@@ -104,4 +106,3 @@
 		%a.btn{href: "#", data: {dismiss: "modal"}} Close
 :javascript
 	mixpanel.track("Landing page loaded")
-					

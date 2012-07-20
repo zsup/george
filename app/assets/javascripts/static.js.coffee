@@ -3,8 +3,14 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 $(document).ready ->
-	$('.dial').knob
-		'min': 0
-		'max': 100
 	$('.navbar a').smoothScroll({offset: -100})
-	$('.nav').scrollspy()
+
+	wistiaEmbed = document.getElementById("wistia_video").wistiaApi
+
+	wistiaEmbed.bind "end", ->
+		mixpanel.track("Video ended")
+
+	wistiaEmbed.bind "play", ->
+		mixpanel.track("Video played")
+
+	wistiaEmbed.time(5).play()
