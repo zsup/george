@@ -93,6 +93,7 @@ $bgImage: image-url("livingroom_blurred.jpg");
 // The sign up bar
 $signUpFontSize: 18px;
 $signUpLineHeight: 30px;
+$signUpHeight: 40px;
 
 .signup {
 	background-color: $switchBlue;
@@ -129,16 +130,16 @@ $signUpLineHeight: 30px;
 .signup input {
 	font-size: $signUpFontSize;
 	line-height: $signUpLineHeight;
-	height: $signUpLineHeight;
 	padding-right: 10px;
 	padding-left: 10px;
+	height: $signUpLineHeight;
 }
 
-.signup .btn {
+button.btn {
 	line-height: $signUpLineHeight;
 	text-transform: uppercase;
 	font-weight: 700;
-	
+	height: $signUpHeight;
 }
 
 // A CSS arrow
@@ -225,23 +226,18 @@ footer ul {
   	padding-right: 20px;
   }
 
-  .navbar .brand {
-  	width: 180px;
-  	text-align: center;
-  	float: none;
-  	margin-left: auto;
-  	margin-right: auto;
-  	padding-left: 0;
-  	padding-right: 0;
-  }
-
   .navbar-fixed-top, .navbar-fixed-bottom {
   	margin-left: 0;
   	margin-right: 0;
   }
 
-  .btn {
+  .signup input {
+  	height: 40px;
+  }
+
+ 	.btn {
   	width: 100%;
+  	margin-top: 20px;
   }
 
   .image {
@@ -252,9 +248,17 @@ footer ul {
 }
 
 @media (max-width: 979px) {
-	.btn {
-		margin-top: 20px;
-	}
+
+
+	.navbar .brand {
+  	width: 180px;
+  	text-align: center;
+  	float: none;
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding-left: 0;
+  	padding-right: 0;
+  }
 
 	.hero-unit {
 		padding-left: 0;
@@ -264,6 +268,8 @@ footer ul {
 	.hero-unit .span6 {
 		width: 100%;
 	}
+
+
 }
 
 @media (max-width: 399px) {
