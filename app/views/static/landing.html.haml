@@ -89,5 +89,14 @@
 				%h5 Help
 				%ul
 					%li
-						%a{href:"#"} Contact Us
+						%a{href:"#contactmodal", data: {toggle: "modal"}} Contact Us
+#contactmodal.modal.hide.fade
+	.modal-header
+		%button.close{type: "button", data: {dismiss: "modal"}} &times;
+		%h3 Contact us
+	.modal-body
+		%p We'd love to hear from you. If you want to chat, shoot us an email at:
+		%a{href: "mailto:hello@switchdevices.com"} hello@switchdevices.com
+	.modal-footer
+		%a.btn{href: "#", data: {dismiss: "modal"}} Close
 					
