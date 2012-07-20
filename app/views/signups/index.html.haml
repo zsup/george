@@ -1,0 +1,19 @@
+.container
+  %h1 Sign ups
+
+  %table.table.table-striped.table-condensed
+    %thead
+      %tr
+        %th Name
+        %th Email
+        %th
+        %th
+        %th
+    %tbody
+      - @signups.each do |signup|
+        %tr
+          %td= signup.name
+          %td= signup.email
+          %td= link_to 'Show', signup
+          %td= link_to 'Edit', edit_signup_path(signup)
+          %td= link_to 'Destroy', signup, method: :delete, data: { confirm: 'Are you sure?' }

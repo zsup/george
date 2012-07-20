@@ -1,4 +1,6 @@
 George::Application.routes.draw do
+  resources :signups
+
   match '/home', to: 'static#home'
   
   root to: 'static#landing'

@@ -22,21 +22,27 @@
 			.span6
 				.video
 					<iframe src="http://fast.wistia.com/embed/iframe/7ea3c32f60?playerColor=121212&version=v1&videoHeight=360&videoWidth=640&volumeControl=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="640" height="360"></iframe>
-.signup
-	.container
-		.row
-			.span6
-				%p
-					%strong SWITCH is coming in Fall 2012.
-				%p Be the first to know when it's ready.
-			.span6.signup-form
-				%form.form-inline
-					.control-group
-						%input.span4{type: 'text', placeholder: "Email address"}
-						%button.btn.btn-primary{type: "button"} Request invite
-			
+- if flash[:notice]
+	.signup.green
+		.container
+			.row
+				.span12
+					%p.notice= flash[:notice]
+- else
+	.signup
+		.container
+			.row
+				.span6
+					%p
+						%strong SWITCH is coming in Fall 2012.
+					%p Be the first to know when it's ready.
+				.span6.signup-form
+					= render 'form'
 .container
-	.arrow
+	- if flash[:notice]
+		.arrow.green
+	- else
+		.arrow
 	#setup.row
 		.span4
 			.image

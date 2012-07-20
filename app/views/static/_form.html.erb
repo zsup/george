@@ -1,0 +1,6 @@
+<%= form_tag({controller: "signups", action: "create", method: "post"}, class: "form-inline") do %>
+  <div class="control-group">
+    <%= email_field(:signup, :email, class: "span4", placeholder: "Email address") %>
+    <%= content_tag(:button, "Request invite", class: "btn btn-primary", type: "submit") %>
+  </div>
+<% end %>

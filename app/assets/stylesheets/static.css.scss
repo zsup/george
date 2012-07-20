@@ -102,6 +102,10 @@ $signUpLineHeight: 30px;
 	line-height: $signUpLineHeight;
 }
 
+.signup.green {
+	background-color: $green;
+}
+
 .signup .form-inline {
 	padding: 10px 0;
 	margin-bottom: 0;
@@ -111,6 +115,10 @@ $signUpLineHeight: 30px;
 	color: $grayLighter;
 	margin-bottom: 0;
 	text-shadow: 0 1px 0 $switchDarkBlue;
+}
+
+.signup.green p {
+	text-shadow: 0 1px 0 darken($green, 20%);
 }
 
 .signup .control-group {
@@ -142,6 +150,10 @@ $signUpLineHeight: 30px;
 	border-left: 40px solid transparent;
 	border-right: 40px solid transparent;
 	border-top: 40px solid $switchBlue;
+}
+
+.arrow.green {
+	border-top: 40px solid $green;
 }
 
 // Nice HRs
