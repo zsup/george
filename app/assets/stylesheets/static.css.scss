@@ -6,7 +6,7 @@
 $switchBlue: #5091cd;
 $switchDarkBlue: #002d62	;
 $bgPattern: image-url("txture.png");
-$bgImage: image-url("chandelier_blurred.jpg");
+$bgImage: image-url("livingroom_blurred.jpg");
 
 // Start with the nav bar
 .navbar-inner {
@@ -52,7 +52,7 @@ $bgImage: image-url("chandelier_blurred.jpg");
 // On to the hero unit
 .hero-unit {
 	@include border-radius(0);
-	padding:40px 0;
+	padding:30px 0;
 	margin-bottom: 0;
 	background-image: $bgImage;
 }
@@ -172,22 +172,18 @@ hr.soften {
 	margin-bottom: 10px;
 }
 
-.text {
-	margin-bottom: 10px;
-}
-
 .text h1 {
 	margin-bottom: 10px;
 }
 
 .text p {
-	margin: 0;
+	margin-bottom: 10px;
 }
 
 p.footnote {
-	margin-top: 10px;
 	font-size: 80%;
 	color: $grayLight;
+	margin-bottom: 10px;
 }
 
 code, pre {
@@ -274,6 +270,12 @@ footer ul {
 	.hero-unit h1 {
 		font-size: 40px;
 		line-height: 40px;
+	}
+}
+
+@media (min-width: 980px) {
+	.text {
+		margin-top: 30px;
 	}
 }
 
