@@ -134,7 +134,7 @@ $signUpHeight: 40px;
 	height: $signUpLineHeight;
 }
 
-::-webkit-input-placeholder {
+input::-webkit-input-placeholder, ::-webkit-input-placeholder {
 	line-height: $signUpLineHeight;
 }
 

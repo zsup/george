@@ -12,10 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.knob
-//= require jquery.fitvids
 //= require jquery.smooth-scroll.min
 //= require bootstrap-modal
 //= require bootstrap-transition
-//= require prettify
+//= require retina
 //= require static
