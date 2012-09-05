@@ -3,7 +3,7 @@ require 'rest_client'
 class ApiController < ApplicationController
 	respond_to :html, :json
 
-	@api_base = 'http://swtch.co/device/'
+	@api_base = 'http://sprk.io/device/'
 
 	def get_status(device)
 		RestClient.get(@api_base+device.device_id) do |response|
