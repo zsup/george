@@ -8,6 +8,8 @@ gem 'pg', '0.12.2'
 
 gem 'haml', '~> 3.1.6'
 
+gem 'rest-client'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
